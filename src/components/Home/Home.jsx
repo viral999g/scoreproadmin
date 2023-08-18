@@ -11,6 +11,7 @@ import {
   TableRow,
 } from "@mui/material";
 import SearchBar from "material-ui-search-bar";
+import moment from "moment/moment";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -79,7 +80,9 @@ const Home = () => {
                     {index + 1}
                   </TableCell>
                   <TableCell align="center">{row.email}</TableCell>
-                  <TableCell align="center">{row.created_date}</TableCell>
+                  <TableCell align="center">
+                    {moment(row.created_date).format("DD MMM, YYYY")}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
