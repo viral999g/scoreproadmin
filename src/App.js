@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Outlet, useNavigate } from "react-router";
 import { ThemeProvider, createTheme } from "@mui/material/styles";

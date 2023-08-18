@@ -3,7 +3,6 @@ import Navbar from "../Navbar/Navbar";
 import { useNavigate } from "react-router";
 import axios from "axios";
 import {
-  Paper,
   Table,
   TableBody,
   TableCell,
